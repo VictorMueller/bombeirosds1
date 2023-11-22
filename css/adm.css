@@ -1,0 +1,574 @@
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+    
+}
+.menu
+{
+    /*background-color: black;*/
+    width: 10%;
+    height: 100vh;
+
+}
+.menu2
+{
+    background-color: #343186;
+    width: 60%;
+    height: 90vh;
+    border-radius: 50px;
+    margin-top: 25px;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+
+.add2
+{
+    width: 30px;
+    height: 30px;
+}
+.logo
+{
+    width:90px;
+    height: 90px;
+    margin-top:-50px
+}
+.casinha
+{
+    width:130px;
+    height: 70px;
+    margin-top: -30px;
+}
+.saindo
+{
+    width: 40px;
+    height: 70px;
+}
+.div2
+{
+    width: 40%;
+    height: 95vh; 
+    /*background-color: black;*/
+}
+.div3
+{
+    width: 100%;
+    height: 95vh; 
+    /*background-color: red;*/
+     flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+}
+.numeross
+{
+    flex-direction: row;
+    display: flex;
+   /*background-color: #343186;*/
+    width: 640px;
+    height: 150px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.numerousu
+{
+    background-color: silver;
+    width: 270px;
+    height: 90px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 55px;
+    padding-left: 30px;
+    font-family: 'Effra Heavy', sans-serif;
+    font-family: 'Effra Light', sans-serif;
+    font-family: 'Effra Medium', sans-serif;
+    font-family: 'Effra', sans-serif;
+    padding-top: 20px;
+
+
+}
+.add2{
+     width: 60px;
+     height: 50px;
+     margin-left: 5px;
+
+}
+.numerousu p 
+{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 50px;
+    margin-top: -40px;
+}
+.numeroadm p 
+{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 50px;
+    margin-top: -40px;
+}
+.numeroadm
+{
+    background-color: silver;
+    width: 270px;
+    height: 90px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 55px;
+    padding-left: 30px;
+    font-family: 'Effra Heavy', sans-serif;
+    font-family: 'Effra Light', sans-serif;
+    font-family: 'Effra Medium', sans-serif;
+    font-family: 'Effra', sans-serif;
+    padding-top: 20px;
+x;
+
+}
+.ola
+{
+    background-color: silver; 
+    width: 100%;
+    height: 20vh; 
+    border-radius: 20px;
+
+}
+.bemvindo
+{
+    font-size: 40px;
+    font-family: 'Effra Heavy', sans-serif;
+    font-family: 'Effra Light', sans-serif;
+    font-family: 'Effra Medium', sans-serif;
+    font-family: 'Effra', sans-serif;
+    margin-left: 30px;
+    top:20px
+}
+.bemvindo p{
+    margin-top: -20px;
+}
+.nome
+{
+    margin-top: -20px;
+    margin-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+
+}
+.bombe
+{
+    width: 140px;
+    height: 160px;
+    margin-left: 400px;
+    margin-top:-130px ;
+}
+.cadastrados
+{
+    background-color: silver; 
+    width: 100%;
+    height: 70vh; 
+    margin-top: 30px;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+
+}
+.cada{
+    font-size: 50px;
+    font-family: 'Effra Heavy', sans-serif;
+font-family: 'Effra Light', sans-serif;
+font-family: 'Effra Medium', sans-serif;
+font-family: 'Effra', sans-serif;
+color: white;
+   
+}
+.inserir
+{
+    background-color: silver; 
+    width: 90%;
+    height: 70vh; 
+    margin-top: 0px;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+.cada
+{
+    font-family: 'Effra Heavy', sans-serif;
+    font-family: 'Effra Light', sans-serif;
+    font-family: 'Effra Medium', sans-serif;
+    font-family: 'Effra', sans-serif;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.prin
+{
+    width:500px;
+    height: 320px;
+    margin-top: 20px;
+    
+    background-color: rgba(255, 255, 255, 0.76);
+    justify-content: space-around;
+    justify-items: center;
+    border-radius: 10px;
+   margin-bottom: 30px;
+    align-items: center;
+    align-content: center;
+    font-family: 'Poppins', sans-serif;
+    
+  
+    font-size: 14px;
+    overflow-x: hidden;
+   
+    padding-left: 0px; 
+   
+
+}
+.prin::-webkit-scrollbar {
+    width: 10px;  /* Largura do scrollbar */
+    height: 5px; /* Altura do scrollbar, relevante se você também tiver um scrollbar horizontal */
+}
+
+/* Estilo do thumb (parte móvel) */
+.prin::-webkit-scrollbar-thumb {
+    background: #888;  /* Cor do thumb */
+    border-radius: 5px; /* Arredondar bordas do thumb */
+}
+
+.prin::-webkit-scrollbar-thumb:hover {
+    background: #555;  /* Cor do thumb quando o mouse passa por cima */
+}
+
+/* Estilo da track (parte imóvel) */
+.prin::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor de fundo */
+    border-radius: 5px;  /* Arredondar bordas da track */
+}
+.usuario
+{
+   
+    background-color: silver;
+    margin: 10px 5px;
+    width: 90%;
+    border-radius: 20px;
+    height: 50px;
+    margin-top:10px ;
+    margin-left: 30px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.tabela
+{
+    
+    width: 100%;
+    height: 75vh;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
+    
+    padding-left: 0px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+   
+}
+.exclui
+{
+    border-radius: 20px;
+    border:transparent;
+    font-family: 'Poppins', sans-serif;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+   
+    background-color: #e2353be5;
+    color: aliceblue;
+}
+
+table 
+{
+    width: 98%;
+    
+   
+}
+  
+th 
+{
+    height: 50px;
+   
+   
+    
+}
+
+td
+{
+    font-family: 'Poppins', sans-serif;
+   text-align: center;
+   font-size: 15px;
+   
+}
+
+.table_heading {
+    background-color: yellow;
+}
+
+.table_heading:first-child {
+    border-top-left-radius: 100%;
+}
+
+
+/* 
+    Arredondar Bordas da Tabela -> aplicar na classe .tabelinha
+    Ele arredonda somente o primeiro e o último elemento da <table class="tabelinha"/>
+    (:first-child) / (:last-child)
+*/
+.tabela_redonda {
+    border-radius: 10px;
+  }
+  
+  .tabela_redonda th:first-child {
+    border-top-left-radius: 10px;
+  }
+  
+  .tabela_redonda th:last-child {
+    border-top-right-radius: 10px;
+  }
+  
+  .tabela_redonda tr:first-child td:first-child {
+    border-bottom-left-radius: 10px;
+  }
+  
+  .tabela_redonda tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+  }
+
+a
+{
+    
+    color: black;
+}
+.excluir
+{
+    color:red
+}
+
+
+.linha
+{
+ background-color:red;
+}
+.motivacional
+{
+    flex-direction: row;
+    width: 500px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-width: 3px;
+    justify-content: center;
+    border-style: solid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 20px;
+    display: flex;
+    border-color: rgba(255, 255, 255, 0.733)
+}
+.alerta
+{
+    width:50px;
+    height:50px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.lembre
+{
+ font-size: 15px;
+ width: 500px;
+ margin-top: 20px;
+ margin-left: 20px;
+ font-family: 'Poppins', sans-serif;
+}
+.motivacional p
+{
+  margin-top: 70px;
+  font-size: 14px;
+  margin-left: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.cora
+{
+    width: 70px;
+    margin-right: 20px;
+   margin-top: -20px;
+
+}
+.um
+{
+    color: white;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-top: -50px;
+    font-size: 30px;
+    font-family: 'Effra Heavy', sans-serif;
+font-family: 'Effra Light', sans-serif;
+font-family: 'Effra Medium', sans-serif;
+font-family: 'Effra', sans-serif;
+   
+   
+
+}
+.tres
+{
+    flex-direction: column;  
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.HOMI
+{
+    
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.senha
+{
+    
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.cpf
+{
+    
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.descricao
+{
+    
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.caixa::placeholder
+{
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    color:rgba(255, 255, 255, 0.753);
+    font-size: 15px;
+}
+.caixa
+{
+    width: 250px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #e2353b;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+
+}
+.user
+{
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.entrar
+{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #343186;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 15px;
+    font-family: 'Effra Heavy', sans-serif;
+font-family: 'Effra Light', sans-serif;
+font-family: 'Effra Medium', sans-serif;
+font-family: 'Effra', sans-serif;
+}
+.escrita
+{
+    margin-left:18px;
+    margin-top: 10px;
+}
+#mensagemErro
+ {
+    color: black;
+    position: absolute;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 10;
+    display: flex;
+    margin-top:20px;
+    font-size: 13px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 12px;
+ }

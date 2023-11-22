@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
+    <link rel="Website Icon" type="png"
+    href="../img/noar.png">
+    <title>CADASTRO</title>
+</head>
+<body>
+    
+    <div class="um">
+        <b> CADASTRE-SE</b>
+     </div>
+     <img class="logo" src="../img/logo_grande.png" width="200px">
+     <form action="../cadastrar.php" method="post" onsubmit="return validarCampo()">
+        <div class="tres">
+          
+            <div class="usuario">
+                <input class="caixa" type="login" id="login" name="login" placeholder="Usuário">
+            </div>
+            <br>
+            <div class="senha">
+                <input class="caixa" type="senha" id="senha" name="senha" placeholder="Senha">
+            </div>
+            <div class="cpf">
+                <input class="caixa" type="cep" id="cep" name="cep" placeholder="CEP"  onkeyup="ValidarCEP()";>
+            </div>
+            <div class="descricao">
+                <input class="caixa" type="descricao" id="descricao" name="descricao" placeholder="Descrição Pessoal">
+            </div>
+            <div id="mensagemErro" ></div>
+            
+        </div>
+        <button class="entrar" type="submit">CONFIRMAR</button>
+        
+    </form>
+    
+</body>
+<script>
+    function validarCEP() {
+            const cepInput = document.getElementById("cep");
+            const resultadoElement = document.getElementById("resultado");
+
+            const cepRegex = /^\d{5}-\d{3}$/; // Formato esperado: 00000-000
+
+            if (cepRegex.test(cepInput.value)) {
+                resultadoElement.textContent = "CEP válido!";
+                resultadoElement.style.color = "green";
+            } else {
+                resultadoElement.textContent = "CEP inválido. Use o formato 00000-000.";
+                resultadoElement.style.color = "red";
+            }
+        }
+    function validarCampo() {
+      var campo = document.getElementById('login').value;
+      
+      if (campo === '') {
+        document.getElementById('mensagemErro').innerHTML = 'Campo vazio! Por favor, preencha o campo.';
+        return false;
+      }
+      
+      
+    
+        var campo = document.getElementById('senha').value;
+      
+      if (campo === '') {
+        document.getElementById('mensagemErro').innerHTML = 'Campo vazio! Por favor, preencha o campo.';
+        return false;
+      }
+      
+      return true;
+
+      var campo = document.getElementById('cpf').value;
+      
+      if (campo === '') {
+        document.getElementById('mensagemErro').innerHTML = 'Campo vazio! Por favor, preencha o campo.';
+        return false;
+      }
+      
+      return true;
+
+      var campo = document.getElementById('descricao').value;
+      
+      if (campo === '') {
+        document.getElementById('mensagemErro').innerHTML = 'Campo vazio! Por favor, preencha o campo.';
+        return false;
+      }
+      
+      return true;
+    }
+</script>
+</html>
