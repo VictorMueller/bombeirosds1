@@ -1,43 +1,44 @@
 <?php
-    session_start();
-    $login = $_POST["login"]; //pega o input
-    $senha = $_POST["senha"];
-echo($login);
-echo($senha);
-    include("conecta.php"); //conecta com o banco de dados
+session_start();
 
-        $comando = $pdo->prepare("SELECT * FROM cadastro where login= '$login' and senha= '$senha' ");
-        $resultado = $comando->execute();
-        $n = 0;
-        $admin = "n";
+// Pega o input
+$login = $_POST["login"];
+$senha = $_POST["senha"];
 
-    while( $linhas = $comando->fetch())
+// Conecta com o banco de dados
+include("conecta.php");
 
-        {
-            $n = 1;
-            $admin = $linhas["adm"];
-            echo("entrei aqui");
-        }
+// Prepara a consulta
+$comando = $pdo->prepare("SELECT * FROM cadastro WHERE login = :login AND senha = :senha");
 
-        if($n ==0)
-        {
-            header("Location: index.html");
-        }
-        if($n ==1)
-        {
-            if($admin== "s")
-        {
-            
-            $_SESSION["logado"] = $login;
-           header("Location: html/adm.php");
-        }
-        else
-        {
-            $_SESSION["logado"] = $login;
-            header("Location: html/pagina1.html");
-        }
+// Vincula os parâmetros
+$comando->bindParam(":login", $login);
+$comando->bindParam(":senha", $senha);
 
-        }
+// Executa a consulta
+$comando->execute();
 
-echo($admin);
+// Verifica se a consulta retornou algum registro
+if ($comando->rowCount() > 0) {
+    // O usuário foi encontrado
+
+    // Obtém o campo "adm" do registro encontrado
+    $admin = $comando->fetch()["adm"];
+
+    // Cria a sessão do usuário
+    $_SESSION["logado"] = $login;
+
+    // Redireciona o usuário para a página apropriada
+    if ($admin == "s") {
+        header("Location: html/adm.php");
+    } else {
+        header("Location: html/pagina1.php");
+    }
+} else {
+    // O usuário não foi encontrado
+    header("Location: index.html");
+}
+
+// Exibe o valor de $admin
+echo $admin;
 ?>
