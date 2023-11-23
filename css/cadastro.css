@@ -9,7 +9,7 @@ body
     align-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: #343186;
+    background-color: #f7f7f7;
     
 }
 .logo
@@ -20,7 +20,7 @@ body
 
 .um
 {
-    color: white;
+    color: rgb(255, 0, 0);
     justify-content: center;
     justify-items: center;
     align-content: center;
@@ -99,7 +99,7 @@ font-family: 'Effra', sans-serif;
     width: 250px;
     height: 35px;
     border-radius: 50px;
-    background-color: #e2353b;
+    background-color: #343186;
     justify-content: center;
     justify-items: center;
     align-content: center;
@@ -142,7 +142,7 @@ font-family: 'Effra', sans-serif;
 }
 #mensagemErro
  {
-    color: rgb(168, 141, 141);
+    color: rgb(255, 0, 0);
     position: absolute;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     z-index: 10;
