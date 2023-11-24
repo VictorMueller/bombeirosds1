@@ -1,12 +1,12 @@
 <?php
     session_start();
-    $login = $_POST["login"]; //pega o input
-    $senha = $_POST["senha"];
+    $login = $_POST['login']; //pega o input
+    $senha = $_POST['senha'];
 echo($login);
 echo($senha);
     include("conecta1.php"); //conecta com o banco de dados
 
-        $comando = $pdo->prepare("SELECT * FROM cadastro where login= '$login' and senha= '$senha' ");
+        $comando = $pdo->prepare("SELECT * FROM cadastro where nome = '$login' and senha= '$senha' ");
         $resultado = $comando->execute();
         $n = 0;
         $admin = "n";
